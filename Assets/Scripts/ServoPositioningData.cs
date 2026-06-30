@@ -35,7 +35,7 @@ public struct PositioningData
 public class AxisData
 {
     public string axisName = "new Axis";
-    public List<PositionData> stepDataList = new List<PositionData>();
+    public List<PositioningData> stepDataList = new List<PositioningData>();
 }
 
 [CreateAssetMenu(fileName = "new PositioningData", menuName = "DigitalTwin/PositioningData")]

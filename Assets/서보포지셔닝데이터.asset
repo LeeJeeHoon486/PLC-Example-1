@@ -10,8 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3dace1c7a1578a4588d111014818111, type: 3}
-  m_Name: ServoConveyorPositioningData
-  m_EditorClassIdentifier: 
-  axes:
-  - axisName: 
-    stepDataList: []
+  m_Name: "\uC11C\uBCF4\uD3EC\uC9C0\uC154\uB2DD\uB370\uC774\uD130"
+  m_EditorClassIdentifier: Assembly-CSharp::ServoPositioningData
+  axes: []

@@ -109,7 +109,6 @@ public class PositioningDataEditorWindow : EditorWindow
     private void InitializeData()
     {
         serializedData = new SerializedObject(positioningData);
-        Debug.Log($"AAA +> {serializedData}");
         axesProperty = serializedData.FindProperty("axes");
         selectedAxisIndex = 0;
         SetupReorderableList();
@@ -190,7 +189,6 @@ public class PositioningDataEditorWindow : EditorWindow
         if (axesProperty == null || axesProperty.arraySize == 0) return;
 
         SerializedProperty stepDataProp = axesProperty.GetArrayElementAtIndex(selectedAxisIndex).FindPropertyRelative("stepDataList");
-
         stepList = new ReorderableList(serializedData, stepDataProp, true, true, true, true);
 
         stepList.drawHeaderCallback = (Rect rect) => {
@@ -217,7 +215,7 @@ public class PositioningDataEditorWindow : EditorWindow
 
             SerializedProperty methodProp = element.FindPropertyRelative("method");
             SerializedProperty addressProp = element.FindPropertyRelative("positioningAddress");
-
+            Debug.Log(addressProp);
             ControlMethod currentMethod = (ControlMethod)methodProp.enumValueIndex;
             bool isSpeedControl = (currentMethod == ControlMethod.Forward_Speed || currentMethod == ControlMethod.Reverse_Speed);
 
