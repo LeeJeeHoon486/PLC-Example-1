@@ -12,4 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3dace1c7a1578a4588d111014818111, type: 3}
   m_Name: "\uC11C\uBCF4\uD3EC\uC9C0\uC154\uB2DD\uB370\uC774\uD130"
   m_EditorClassIdentifier: Assembly-CSharp::ServoPositioningData
-  axes: []
+  axes:
+  - axisName: Axis 1
+    stepDataList:
+    - pattern: 0
+      method: 0
+      positioningAddress: 0
+      commandSpeed: 0
+      dwellTime: 0
+      mCode: 0
+    - pattern: 0
+      method: 0
+      positioningAddress: 0
+      commandSpeed: 0
+      dwellTime: 0
+      mCode: 0
+    - pattern: 0
+      method: 0
+      positioningAddress: 0
+      commandSpeed: 0
+      dwellTime: 0
+      mCode: 0
