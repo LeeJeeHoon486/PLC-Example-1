@@ -16,20 +16,26 @@ MonoBehaviour:
   - axisName: Axis 1
     stepDataList:
     - pattern: 0
-      method: 0
+      method: 1
+      positioningAddress: 0.5
+      commandSpeed: 0.5
+      dwellTime: 0
+      mCode: 100
+    - pattern: 0
+      method: 1
+      positioningAddress: -0.5
+      commandSpeed: 0.5
+      dwellTime: 0
+      mCode: 200
+    - pattern: 0
+      method: 2
       positioningAddress: 0
-      commandSpeed: 0
+      commandSpeed: 0.5
       dwellTime: 0
       mCode: 0
     - pattern: 0
-      method: 0
+      method: 2
       positioningAddress: 0
-      commandSpeed: 0
-      dwellTime: 0
-      mCode: 0
-    - pattern: 0
-      method: 0
-      positioningAddress: 0
-      commandSpeed: 0
+      commandSpeed: 0.5
       dwellTime: 0
       mCode: 0
